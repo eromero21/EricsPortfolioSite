@@ -18,6 +18,9 @@ import pythonCalc from './pythonCalc.png';
 import weightedGrades from './weightedGradesPy.png';
 import checkers from './checkersGame.png';
 import drivingTest from './drivingtest.png';
+import gymApp from './gymApp.png';
+import serverGuess from "./serverGuessGame.png";
+import multiPerceptron from "./python_ml_perc.png";
 
 export {
   java_img,
@@ -39,5 +42,8 @@ export {
   pythonCalc,
   weightedGrades,
   checkers,
-  drivingTest
+  drivingTest,
+  gymApp,
+  serverGuess,
+  multiPerceptron
 };

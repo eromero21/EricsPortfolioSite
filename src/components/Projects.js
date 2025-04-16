@@ -3,7 +3,7 @@ import { useState } from "react";
 import { ProjectCard } from "./ProjectCard";
 import { dateProj_img, nasaProj_img, boardgameDB_img, 
     pythonCalc, weightedGrades, checkers,
-drivingTest } from '../assets/img';
+drivingTest, gymApp, serverGuess, multiPerceptron } from '../assets/img';
 export const Projects = () => {
     const [showModal, setShowModal] = useState(false);
     const [modalImg, setModalImg] = useState("");
@@ -28,19 +28,34 @@ export const Projects = () => {
             title: "Checkers Game",
             description: "School Solo Project\n Checkers GUI game which has computer player implementation. Optionally can be played in CLI.",
             imgUrl: checkers,
+        },
+        {
+            title: "Gym App",
+            description: "School Group Project\n Gym application, which allows users such as clients, trainers, and owners to register or login. Each role has different permissions.",
+            imgUrl: gymApp,
+        },
+        {
+            title: "Server Guess Game",
+            description: "School Solo Project\n Host and client implementation for guessing game. Shows movie quote and picture and allows user to guess the movie. Includes leaderboard functionality.",
+            imgUrl: serverGuess,
         }
     ];
 
     const pythonprojects = [
         {
-            title: "Python Periodic Payment Calculator",
+            title: "Periodic Payment Calculator",
             description: "School Solo Project\n Receives input for payment, interest, and number of payments to calculate a total. GUI uses Tkinter.",
             imgUrl: pythonCalc,
         },
         {
-            title: "Python Weighted Grade Calculation",
+            title: "Weighted Grade Calculation",
             description: "School Solo Project\n Grabs input csv file with student data. Calculates student grades with assignment weights and outputs as CLI.",
             imgUrl: weightedGrades,
+        },
+        {
+            title: "Machine Learning Multi-Layer Perceptron",
+            description: "School Solo Project\n Implements a multi-layer perceptron machine learning model to learn quadratic function.",
+            imgUrl: multiPerceptron,
         }
     ];
 
