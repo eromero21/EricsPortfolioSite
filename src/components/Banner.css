@@ -166,7 +166,8 @@
   .image-container img {
     display: block;
     max-width: 100%;
-    height: auto;
+    width: 400px;
+    height: 275px;
   }
 
   .image-text {
