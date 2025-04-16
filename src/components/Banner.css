@@ -1,0 +1,183 @@
+.banner {
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+}
+
+.banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    background: linear-gradient(90.21deg, rgba(8, 76, 132, 0.623) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
+.banner h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.banner p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+}
+
+.banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.banner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+}
+
+.banner button:hover svg {
+    margin-left: 25px;
+}
+
+.image-text {
+  color: black;
+}
+
+.steve, .quote {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    vertical-align: top;
+    width: 0;
+    line-height: 1.2em;
+    height: 1.2em;
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+.image-container:hover .quote,
+.image-container.typed .quote {
+    animation: typingquote 2s steps(27, end) forwards;
+  }
+
+  .image-container:hover .steve, 
+  .image-container.typed .steve {
+    animation: typingsteve 1.25s steps(17, end) forwards 2s;
+  }
+
+  .image-container:hover .cursor1,
+  .image-container.typed .cursor1 {
+    animation: hideCursor 0s forwards 2s;
+  }
+
+  .image-container:hover .cursor2,
+  .image-container.typed .cursor2 {
+    animation: showCursor 0s forwards 4s, blink 1.25s steps(1, start) infinite;
+  }
+
+  @keyframes showCursor {
+    to {
+        visibility: visible;
+    }
+  }
+
+  @keyframes hideCursor {
+    to {
+        visibility: hidden;
+    }
+  }
+
+  @keyframes typingquote {
+      from {
+        width: 0;
+      }
+      to {
+        width: 205px;
+      }
+  }
+
+  @keyframes typingsteve {
+    from {
+        width: 0;
+      }
+      to {
+        width: 132px;
+      }
+  }
+
+  .cursor1 {
+    position: absolute;
+    transform: translate(0, -15%);
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    margin-left: 1px;
+    color: white;
+    animation: blink 1.25s steps(1, start) infinite;
+    visibility: visible;
+  }
+
+  .cursor2 {
+    position: absolute;
+    transform: translate(0, -15%);
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    vertical-align: top;
+    margin-left: 1px;
+    color: white;
+    visibility: hidden;
+  }
+
+  @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+    margin: 50px 0 0 100px;
+  }
+
+  .image-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-text {
+    position: absolute;
+    top: 19%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .wrap {
+    font-size: 80%;
+    text-decoration: underline;
+  }
