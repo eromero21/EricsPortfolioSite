@@ -4,6 +4,7 @@ import { ProjectCard } from "./ProjectCard";
 import { dateProj_img, nasaProj_img, boardgameDB_img, 
     pythonCalc, weightedGrades, checkers,
 drivingTest, gymApp, serverGuess, multiPerceptron } from '../assets/img';
+
 export const Projects = () => {
     const [showModal, setShowModal] = useState(false);
     const [modalImg, setModalImg] = useState("");
@@ -145,7 +146,7 @@ export const Projects = () => {
                                 <img className="proj-modal-img" src={modalImg} alt="Large View" />
                             </Modal.Body>
                         </Modal>
-                        <p style={{ color: "red" }}>Note: If you have any questions or want to see code, feel free to reach out!</p>
+                        <p className="note">Note: If you have any questions or want to see code, feel free to reach out!</p>
                     </div>
                     </Col>
                 </Row>

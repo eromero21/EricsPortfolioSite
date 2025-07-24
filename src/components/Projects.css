@@ -4,21 +4,22 @@
   }
 
   .proj-box {
-    background: #151515;
+    background: transparent;
     border-radius: 64px;
     text-align: center;
     padding: 60px 50px;
-    margin-top: -60px;
+    margin-top: 200px;
 }
 
   .project h2 {
       font-size: 45px;
       font-weight: 700;
     text-align: center;
+    color: white;
   }
 
   .project p {
-    color: #B8B8B8;
+    color: white;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -47,7 +48,7 @@
     background-color: transparent;
     border-radius: 0;
     padding: 17px 0;
-    color: #fff;
+    color: white;
     width: 100%;
     font-size: 17px;
     letter-spacing: 0.8px;
@@ -97,7 +98,6 @@
   }
 
   .proj-imgbox {
-    display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -137,6 +137,7 @@
     opacity: 0;
     width: 100%;
     white-space: pre-line;
+    color: white;
   }
 
   .proj-imgbox:hover .proj-text {
@@ -191,4 +192,9 @@
     max-width: none;
     width: auto;
     margin: 0 auto;
+  }
+
+  p.note {
+    color: red;
+    margin-top: 25px;
   }

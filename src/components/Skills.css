@@ -4,7 +4,7 @@
 }
 
 .skill-box {
-    background: #151515;
+    background: transparent;
     border-radius: 64px;
     text-align: center;
     padding: 60px 50px;
@@ -14,23 +14,27 @@
 .skill h2 {
     font-size: 40px;
     font-weight: 700;
+    color: white;
 }
 
 .tech-title {
     font-weight: 700;
+    color: white;
 }
 
 .knowledge-lvl {
     margin-bottom: 30px;
+    color: white;
 }
 
 .soft-title {
     font-weight: 700;
     margin: 50px 0 30px 0;
+    color: white;
 }
 
 .skill p {
-    color: #b8b8b8;
+    color: white;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -41,6 +45,7 @@
     width: 80%;
     margin: 0 auto;
     position: relative;
+    color: white;
 }
 
 .skill-slides .item img {
