@@ -21,6 +21,7 @@ import drivingTest from './drivingtest.png';
 import gymApp from './gymApp.png';
 import serverGuess from "./serverGuessGame.png";
 import multiPerceptron from "./python_ml_perc.png";
+import movieLookup from "./movie-lookup.png";
 
 export {
   java_img,
@@ -45,5 +46,6 @@ export {
   drivingTest,
   gymApp,
   serverGuess,
-  multiPerceptron
+  multiPerceptron,
+    movieLookup,
 };
