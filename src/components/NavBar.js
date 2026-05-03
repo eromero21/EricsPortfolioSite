@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav, Modal} from "react-bootstrap";
 import logo from "../assets/img/Logo.png";
-import { FaLinkedinIn, FaFilePdf } from 'react-icons/fa';
+import { FaLinkedinIn, FaFilePdf, FaGithub } from 'react-icons/fa';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -48,7 +48,8 @@ export const NavBar = () => {
             <Modal show={showContactModal} onHide={() => setContactModal(false)} centered>
                 <Modal.Body className="text-center">
                     <p>Email: eric.romero96@gmail.com<br />
-                    <a href="https://www.linkedin.com/in/eric-romero-b43608279/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/eric-romero-b43608279/" target="_blank" rel="noopener noreferrer">LinkedIn</a><br />
+                    <a href="https://github.com/eromero21" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </p>
                 </Modal.Body>
             </Modal>
@@ -56,6 +57,7 @@ export const NavBar = () => {
             <div className="social-icon">
                 <a href="https://www.linkedin.com/in/eric-romero-b43608279/" target="_blank" rel="noopener noreferrer" title="LinkedIn"> <FaLinkedinIn className="linkedin-icon"/> </a>
                 <a href="/Eric_Romero_Resume.pdf" target="_blank" rel="noopener noreferrer" title="Resume"> <FaFilePdf className="resume-icon"/> </a>
+                <a href="https://github.com/eromero21" target="_blank" rel="noopener noreferrer" title="GitHub"> <FaGithub className="github-icon" /> </a>
             </div>
             <button className="vvd" onClick={() => setContactModal(true)} style={{cursor: "pointer"}}><span>Let's Connect</span></button>
           </span>

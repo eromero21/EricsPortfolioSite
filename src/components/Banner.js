@@ -12,9 +12,9 @@ export const Banner = () => {
                 <span className="tagline">Welcome to Eric's Portfolio</span>
                 <h1><span className="wrap">About me</span></h1>
                 <p className={"about-text"}>
-                    Hello, my name is Eric and I am an aspiring software engineer who just graduated from Arizona State University.
-                    I am originally from an island in Alaska named Kodiak and graduated from High School there.
-                    A few things that I love are learning, staying active, problem solving, gaming, and being outdoors.
+                    Hello, my name is Eric and I am an aspiring software engineer who recently graduated from Arizona State University.
+                    I have an array of personal, academic, and professional experience in tech and continue to strive to learn more in the field.
+                    I would welcome the opportunity to put my skills to use as well as build upon them.
                 </p>
                 <button onClick={() => setContactModal(true)} style={{ cursor: "pointer" }}>Let's connect<FontAwesomeIcon icon={faArrowRight} /></button>
                 <Modal show={showContactModal} onHide={() => setContactModal(false)} centered>
