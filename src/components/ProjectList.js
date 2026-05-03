@@ -7,12 +7,18 @@ import {
     pythonCalc,
     serverGuess,
     weightedGrades,
-    movieLookup
+    movieLookup,
+    taskboard
 } from "../assets/img";
 
 export const jsprojects = [
     {
-        title: "Move Search",
+        title: "Taskboard App",
+        description: "Personal Project\n React Project. User can create and account and login. Full CRUD of boards and cards for task management.",
+        imgUrl: taskboard,
+    },
+    {
+        title: "Movie Search",
         description: "Personal Project\n React Project. User search pulls data from OMDb API and returns top 10 results.",
         imgUrl: movieLookup,
     },
